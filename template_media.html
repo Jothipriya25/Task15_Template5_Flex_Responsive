@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>template media</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body{
+            margin: 0;
+        }
+        .inside{
+            width:80%;
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .row1 .inside div {
+            width: 50%;
+        }
+        img{
+            width:100%;
+        }
+        .row1{
+            background-color: white;
+            padding:20px;
+            display:flex;
+            justify-content: center;
+        }
+        
+        .nav{
+            text-align: right;
+        }
+        .nav a{
+            display: inline-block;
+            padding:20px 20px;
+            background-color:white;
+            color:black;
+            text-decoration:none;
+        }
+        .nav a:hover{
+            background-color: #e85356;
+            border-radius: 50%;
+        }
+        .row1 h2{
+            margin: 0;  
+            color: rgb(44 44 44);
+            font-weight: 100;
+            font-size:50px;
+            line-height: 0.8em;
+        }
+        .row1 span{
+            color: rgb(232 83 86);
+            font-weight: 400;
+        }
+        .row1 p{
+            margin: 0;
+            color: rgb(97 97 97);
+            font-weight: 100;
+            font-size: large;
+        }
+
+        /* row2 */
+
+        .row2{
+            background-image: url('https://textures.world/wp-content/uploads/2018/10/Seamless-Black-Wood-Texture-1-copy-600x399.jpg'); 
+            padding:30px;
+            display:flex;
+            justify-content: center;
+            
+        }
+
+        .cover1{
+            width:100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .cover1 > div:nth-child(1){
+            width:20%; 
+            padding:10px;
+            display: flex;
+            justify-content:space-between;
+        }
+
+        .cover1  div > div:nth-child(1){
+            width:10%;
+            color:#dc4f52;
+        }
+
+        .cover1  div > div:nth-last-child(1){
+            width:85%; 
+            color:white;
+        }
+        .cover1 > div:nth-child(2){
+            width:5%; 
+            color:gray; 
+            padding-top: 10px; 
+        }
+        .cover1 > div:nth-child(2)  h1{
+            font-size: xx-large; 
+            font-weight: 100;
+        }
+        .cover1 > div:nth-last-child(1) {
+            width:77%;  
+            padding-top: 15px;
+        }
+        .cover1 > div:nth-last-child(1) p {
+            color:gray; 
+            font-size:small;
+        }
+
+
+        /* row3 */
+
+        .row3{
+        padding:20px; 
+        background-color: black; 
+        color:white;
+        display: flex;
+        justify-content: center;
+        }
+
+        .cover2{
+            width:100%;
+            display:flex;
+            flex-wrap: wrap;
+        }
+        #col1{
+            width:25%;  
+            padding:5px;
+        }
+        #head3{
+            margin-bottom:0;
+        }
+        #heads3{
+            font-size:small; 
+            color:#696969;
+        }
+        .row3  button{
+            background-color: #e85356; 
+            border:#e85356; 
+            padding:7px; 
+            color:white; 
+            width:100px; 
+        }
+
+        /* row4 */
+
+        .row4{
+        color:white; 
+        background-image: url('https://textures.world/wp-content/uploads/2018/10/Seamless-Black-Wood-Texture-1-copy-600x399.jpg');
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        }
+        .cover3{
+            width:50%;
+            padding-top: 20px;
+            
+        }
+        #classA{
+            
+            display:flex;
+            flex-wrap: wrap;
+            
+
+        }
+        #classA > div:nth-child(1){
+            /* padding-top:30px; */
+            width:50%; 
+            padding-right:15px;
+        }
+        .row4> h3{
+            /* padding-top:30px; */
+            width:100%; 
+            padding-right:10px;
+
+        }
+        #classA > div:nth-child(2){
+            width:50%; 
+            padding:0 20px 0 10px;
+            font-size: 14px;
+        }    
+        #classA div> h4{
+            margin-top: 0;
+        }
+        #classA > div:nth-child(2) > p{
+            color:#696969;
+        }
+        #classA div>div p{
+            margin-bottom:0;
+        }
+        .points{
+            display: flex;
+            color:#e85356;
+            justify-content: space-between;
+            padding-top: 5px;
+            flex-wrap: wrap;
+        }
+        .cover31{
+            /* display: flex; */
+            width:100%;
+        }
+        .cover4{
+            display: flex;
+            padding:2px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .left4{
+            width:24%;
+        }
+        .right4{
+            width:24%; 
+        }
+        
+         
+        /* row5 */
+
+        .row5{
+            padding:20px; 
+            background-color: white; 
+            color:gray;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .cover5{
+            width:100%;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .cover5 > div:nth-child(1){
+            width:50%; 
+            color:black;
+        }
+        .cover5 > div:nth-last-child(1){
+            width:50%; 
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        @media only screen and (max-width: 576px){
+            .row1 .inside div {
+                width: 100%;
+            }
+            .cover1 > div:nth-child(n+1) {
+                width: 100%;
+            }
+            #col1{
+                width:100%;
+            }
+            .cover3{
+                width:100%;
+            }
+            #classA > div:nth-child(n+1){
+                width:100%;
+            }
+            .points > div:nth-child(n+1){
+                width:100%;
+            }
+            .left4, .right4{
+                width:50%;
+                padding:5px;
+            }
+            /* img{
+                max-width:100%
+            } */
+            .cover5 > div:nth-child(n+1){
+                width:100%;
+                justify-content: flex-start;
+            }
+        }
+    </style>
+    <body>
+        <header class="row1">
+            <div class="inside">
+                <div>
+                        <h2><span>K</span>ata<span>K</span>limt</h2>
+                        <p>Photography</p>
+                </div>
+                <div>
+                    <nav class="nav">
+                        <a href=""> About</a>
+                        <a href=""> Services</a>
+                        <a href=""> Folio</a>
+                        <a href=""> Blog</a>
+                        <a href=""> Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <header class="row2">
+            <div class="inside">
+                <img src="images/kataklimtbg.jpg">
+                <div class="cover1">
+                    <div>
+                            <h1 style="color:white;"><span style="color:#dc4f52;">W</span>elcome!</h1>
+                    </div>                    
+                    <div>
+                        <p><span style="color:#dc4f52"><b>Click here</b></span> for more info about this free website template created by TemplateMonster.com. This is a bootstrap template that goes with several layout options (for desktop, tablet, smartphone landscape and potriat) to fit all popular screen resolutions. The PSD source files of this template are available for free for the registered members of TemplateMonster.com. Feel free to get them!</p> 
+                    </div>
+                </div>
+            <div>
+        </header>
+        <header class="row3">
+            <div class="inside">
+                <div class="cover2">
+                    <div id="col1">
+                        <div>
+                            <h4>Fashion</h4>
+                        </div>
+                        <div>
+                            <img src="images/fashion2.jpg">
+                        </div>
+                        <div>
+                            <p id="head3">At vero eos et accusamus et iusto</p>
+                            <p  id="heads3">Odio dignissimos ducimus qui blantitiis praesentium voluptatum.</p>
+                        </div>
+                        <br><br>
+                        <div>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div id="col1">
+                        <div class="head">
+                            <h4>Nature</h4>
+                        </div>
+                        <div>
+                            <img src="images/nature1.jpg">
+                        </div>
+                        <div>
+                            <p id="head3">Deleniti atque corrupti quos</p>
+                            <p id="heads3">Dolores et quas  excepturi sint occaecati cupiditate non provident.</p>
+                        </div>
+                        <br><br>
+                        <div>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div id="col1">
+                        <div class="head">
+                            <h4>Love story</h4>
+                        </div>
+                        <div>
+                            <img src="images/lovestory.jpg">
+                        </div>
+                        <div>
+                            <p id="head3">Similiuqe sunt in culpa qui officia</p>
+                            <p id="heads3">Deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                        </div>
+                        <br><br>
+                        <div>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div id="col1">
+                        <div class="head">
+                            <h4>Fine art</h4>
+                        </div>
+                        <div>
+                            <img src="images/fineart2.jpg">
+                        </div>
+                        <div>
+                            <p id="head3">Similiuqe sunt in culpa qui officia</p>
+                            <p id="heads3">Deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                        </div>
+                        <br><br>
+                        <div>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="row4">
+            <div class="inside">
+                <div class="cover3">
+                    <h3>Shortly about me</h3> 
+                    <div id="classA">
+                        <div>
+                            <img src="images/about.jpg" style="display:block;">
+                        </div>
+                        <div>
+                            <h4>Sed ut perspictis unde omnis natus error volupatem accusantium doloue laudantium, totam rem.</h4>
+                            <p>Aperium, eaque ipsa quae ab illo veritatis et beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed </p>
+                            <hr color="#2b2b2b">
+                            <div class="points">
+                                <div>
+                                    <p>&#9829; Campaigns</p>
+                                    <p>&#9829; Potriats</p>
+                                    <p>&#9829; Fashion</p>
+                                    <p>&#9829; Fine art</p>
+                                </div>
+                            
+                                <div>
+                                    <p>&#9829; Advertising</p>
+                                    <p>&#9829; Lifestyle</p>
+                                    <p>&#9829; Love story</p>
+                                    <p>&#9829; Landscapes</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="cover3">
+                    <h3>Latest photoshoots</h3>
+                    <div class="cover31">
+                        <div class="classB">
+                            <div class="cover4">
+                                <div class="left4">
+                                    <img src="images/r1c1.jpg">
+                                </div>
+                                <div class="left4">
+                                    <img src="images/r1c2.jpg">
+                                </div>
+                                <div class="right4">
+                                    <img src="images/r1c3.jpg">
+                                </div>
+                                <div class="right4">
+                                    <img src="images/r1c4.jpg">
+                                </div>
+                            </div>
+                            <div class="cover4">
+                                <div class="left4">
+                                    <img src="images/r2c1.jpg">
+                                </div>
+                                <div class="left4">
+                                    <img src="images/r2c2.jpg">
+                                </div>
+                                <div class="right4">
+                                    <img src="images/r2c3.jpg">
+                                </div>
+                                <div class="right4">
+                                    <img src="images/r2c44.jpg">
+                                </div>
+                            </div>
+                            <div class="cover4">
+                                <div class="left4">
+                                    <img src="images/r3c1.jpg">
+                                </div>
+                                <div class="left4">
+                                    <img src="images/r3c2.jpg">
+                                </div>
+                                <div class="right4">
+                                    <img src="images/r3c3.jpg">
+                                </div>
+                                <div class="right4">
+                                    <img src="images/r3c4.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="row5">
+            <div class="inside">
+                <div class="cover5">
+                    <div>
+                        <h4><span>&#169;</span> Copyright.</h4>
+                    </div>
+                    <div>
+                        <p>
+                            <i style="color:#e85356;" class="fa-brands fa-facebook fa-2x"></i>&nbsp;&nbsp;&nbsp;
+                            <i style="color:#e85356;" class="fa-brands fa-flickr fa-2x"></i>&nbsp;&nbsp;&nbsp;
+                            <i style="color:#e85356;" class="fa-brands fa-twitter fa-2x"></i>&nbsp;&nbsp;&nbsp;
+                            <i style="color:#e85356;" class="fa-brands fa-google-plus fa-2x"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>
